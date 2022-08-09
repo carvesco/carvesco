@@ -1,0 +1,20 @@
+{
+	"experience": [
+		{
+			"title": "Akimad/freelance",
+			"exp": [
+				"Web app development, digital magazine in react/NextJS.",
+				"admin site development, to control some aspect of the web app, development of the frontend and backend.",
+				"development of an native app for IOS and Android devices."
+			]
+		},
+		{
+			"title": "Koncilia S.A.S",
+			"exp": [
+				"Development of APIs using the .NET core framework, for payments and retrieve clients information, like bank accounts and bank receipts for the bank reconciliation process.",
+				"Develpment of frontend using Blazor an WebAssembly framework for C# web applications.",
+				"Helping in different maintenance tasks and meetings with clients."
+			]
+		}
+	]
+}
