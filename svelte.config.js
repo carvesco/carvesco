@@ -1,27 +1,26 @@
-
 import adapter from '@sveltejs/adapter-static';
-import preprocess from "svelte-preprocess";
-
-const dev = "production" === "development";
+import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
 		adapter: adapter({
-			pages:"docs",
-			assets:"docs",
-			fallback: '200.html'
+			pages: 'build', // path to public directory
+			assets: 'build', // path to public directory
+			fallback: null
 		}),
-		paths:{
-			base: dev ? "" : "/carvesco"
+		prerender: {
+			crawl: true,
+			enabled: true,
+			onError: 'continue',
+			default: true
 		}
 	},
-	preprocess:[
+	preprocess: [
 		preprocess({
-			postcss:true,
-		}),
-	],
-	
+			postcss: true
+		})
+	]
 };
 
 export default config;
