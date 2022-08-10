@@ -13,7 +13,7 @@
 <svelte:window bind:scrollY={y} />
 
 <div
-	style="position: relative; right: {xpos > 700 ? 0 : (700 - xpos).toString() + 'px'};"
+	style="position: relative; right: {xpos > 800 ? 0 : (800 - xpos).toString() + 'px'};"
 	on:click={(e) => {
 		skillVisible = !skillVisible;
 	}}
