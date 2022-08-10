@@ -6,7 +6,7 @@
 
 <div class="w-4/5 m-auto mt-7 flex  justify-end">
 	<div class="flex flex-row-reverse items-center justify-start">
-		<img class="h-[60px] " src="images/Book.png" alt="Book" href="/" />
+		<img class="h-[80px] " src="images/Book.gif" alt="Book" href="/" />
 		<div class="">
 			<h1 class="text-5xl text-dark-blue mb-2 m-auto">{ed.place}</h1>
 			<h1 class="text-3xl text-center text-dark-blue mb-2 max-w-lg m-auto">

@@ -7,11 +7,13 @@
 	let sklSize = '50%';
 	let skillVisible = false;
 	let y = 0;
+	$: if (xpos < 800) {
+		skillVisible = false;
+	}
 	$: xpos = y;
 </script>
 
 <svelte:window bind:scrollY={y} />
-
 <div
 	style="position: relative; right: {xpos > 800 ? 0 : (800 - xpos).toString() + 'px'};"
 	on:click={(e) => {
@@ -29,9 +31,8 @@
 </div>
 {#if skillVisible}
 	<div>
-        {#each sk as skill,i }
-           <Skillitem skl={skill} indx={i}/> 
-        {/each}
-		
+		{#each sk as skill, i}
+			<Skillitem skl={skill} indx={i} />
+		{/each}
 	</div>
 {/if}

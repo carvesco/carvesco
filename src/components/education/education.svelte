@@ -7,6 +7,9 @@
 	let eduVisible = false;
 	let y = 0;
 	$: xpos = y;
+	$: if (xpos < 600) {
+		eduVisible = false;
+	}
 </script>
 
 <svelte:window bind:scrollY={y} />
