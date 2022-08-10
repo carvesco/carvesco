@@ -2,6 +2,9 @@
 module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		fontFamily:{
+			"body": 'IBM Plex Mono, monospace'
+		},
 		extend: {
 			colors: {
 				'main-black': '#2c2e3b',

@@ -23,7 +23,7 @@
 	on:mouseenter={(e) => {
 		exSize = '90%';
 	}}
-	class="bg-main-grey w-2/5 h-[150px] cursor-pointer flex justify-center items-center rounded-r-full"
+	class="bg-main-grey w-2/5 h-[150px] cursor-pointer flex justify-center items-center rounded-r-full border-double border-y-8 border-dark-blue"
 >
 	<img width={exSize} src="images/Experience.png" alt="Experience title" href="/" />
 </div>

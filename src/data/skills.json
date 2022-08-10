@@ -1,0 +1,22 @@
+[
+	{
+		"title": "frontend",
+		"skill": 3
+	},
+    {
+		"title": "backend",
+		"skill": 2
+	},
+    {
+		"title": "machine learning",
+		"skill": 1
+	},
+    {
+		"title": "cloud computing",
+		"skill": 2
+	},
+    {
+		"title": "computer graphics",
+		"skill": 1
+	}
+]

@@ -22,7 +22,7 @@
 		on:mouseenter={(e) => {
 			edSize = '90%';
 		}}
-		class="bg-main-grey w-2/5 h-[150px] cursor-pointer flex justify-center items-center rounded-l-full animate__animated animate__fadeInRightBig"
+		class="bg-main-grey w-2/5 h-[150px] cursor-pointer flex justify-center items-center rounded-l-full border-double border-y-8 border-dark-blue"
 	>
 		<img width={edSize} src="images/Education.png" alt="Education title" href="/" />
 	</div>
