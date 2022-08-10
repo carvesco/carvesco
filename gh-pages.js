@@ -8,7 +8,7 @@ ghpages.publish(
     repo: 'https://github.com/carvesco/carvesco.git', // Update to point to your repository
     user: {
       name: 'carvesco', // update to use your name
-      email: 'cavelasco@unal.edu.co' // Update to use your email
+      email: 'cavelascor@unal.edu.co' // Update to use your email
     },
     dotfiles: true
   },
