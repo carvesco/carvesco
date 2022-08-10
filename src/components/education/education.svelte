@@ -5,10 +5,14 @@
 	import edu from '../../data/education.json';
 	let edSize = '80%';
 	let eduVisible = false;
+	let y = 0;
+	$: xpos = y;
 </script>
 
+<svelte:window bind:scrollY={y} />
 <div class="flex  justify-end">
 	<div
+		style="position: relative; left: {xpos > 600 ? 0 :(600 - xpos).toString() + 'px'}"
 		on:click={(e) => {
 			eduVisible = !eduVisible;
 		}}
