@@ -7,7 +7,7 @@
 	let eduVisible = false;
 	let y = 0;
 	$: xpos = y;
-	$: if (xpos < 600) {
+	$: if (xpos < 850) {
 		eduVisible = false;
 	}
 </script>
@@ -15,7 +15,7 @@
 <svelte:window bind:scrollY={y} />
 <div class="flex  justify-end">
 	<div
-		style="position: relative; left: {xpos > 600 ? 0 :(600 - xpos).toString() + 'px'}"
+		style="position: relative; left: {xpos > 850 ? 0 :(850 - xpos).toString() + 'px'}"
 		on:click={(e) => {
 			eduVisible = !eduVisible;
 		}}

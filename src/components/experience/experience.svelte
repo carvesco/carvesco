@@ -8,7 +8,7 @@
 	let expVisible = false;
 	let y = 0;
 	$: xpos = y;
-	$: if (xpos < 500) {
+	$: if (xpos < 750) {
 		expVisible = false;
 	}
 </script>
@@ -16,7 +16,7 @@
 <svelte:window bind:scrollY={y} />
 
 <div
-	style="position: relative; right: {xpos > 500 ? 0 : (500 - xpos).toString() + 'px'};"
+	style="position: relative; right: {xpos > 750 ? 0 : (750 - xpos).toString() + 'px'};"
 	on:click={(e) => {
 		expVisible = !expVisible;
 	}}
