@@ -25,21 +25,24 @@
 <div class="w-3/4 m-auto mt-6">
 	<img class="h-[70px] m-auto" src="images/Socials.png" alt="Socials title" href="/" />
 	<div class="flex flex-row w-2/6 justify-around m-auto mt-5">
-		<img
-			on:mouseenter={hanldeMouseOverGH}
-			on:mouseleave={hanldeMouseOutGH}
-			class="h-[60px] cursor-pointer"
-			src={gh}
-			alt="ghcoin"
-			href="/"
-		/>
-		<img
-			on:mouseenter={hanldeMouseOverLN}
-			on:mouseleave={hanldeMouseOutLN}
-			class="h-[60px] cursor-pointer"
-			src={ln}
-			alt="lncoin"
-			href="/"
-		/>
+		<a href="https://www.linkedin.com/in/carvesco/" target="_blank">
+			<img
+				on:mouseenter={hanldeMouseOverGH}
+				on:mouseleave={hanldeMouseOutGH}
+				class="h-[60px] cursor-pointer"
+				src={gh}
+				alt="ghcoin"
+			/>
+		</a>
+		<a href="https://github.com/carvesco" target="_blank">
+			<img
+				on:mouseenter={hanldeMouseOverLN}
+				on:mouseleave={hanldeMouseOutLN}
+				class="h-[60px] cursor-pointer"
+				src={ln}
+				alt="lncoin"
+				href="/"
+			/></a
+		>
 	</div>
 </div>
