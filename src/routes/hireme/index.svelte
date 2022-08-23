@@ -4,6 +4,14 @@
 	import Inpt from '../../components/inpt/inpt.svelte';
 	import { sineInOut } from 'svelte/easing';
 	import fadeScale from '../../components/transitions/fade-scale';
+	import { browser } from '$app/env';
+	import { writable } from 'svelte/store';
+	import Modal from 'svelte-simple-modal';
+	import Popup from './Popup.svelte';
+
+	const modal = writable(null);
+	const showModal = () => modal.set(Popup);
+
 	let name;
 	let email;
 	let message;
@@ -28,6 +36,7 @@
 			});
 			if (response) {
 				console.log(response);
+				showModal();
 			} else {
 				console.log('error');
 			}
@@ -68,3 +77,7 @@
 		</form>
 	</div>
 </div>
+
+{#if browser}
+	<Modal show={$modal} />
+{/if}

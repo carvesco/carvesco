@@ -40,6 +40,7 @@
 		"animate.css": "^4.1.1",
 		"jquery": "^3.6.0",
 		"jsdom": "^20.0.0",
+		"svelte-simple-modal": "^1.4.1",
 		"svrollbar": "^0.12.0"
 	}
 }
