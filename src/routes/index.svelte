@@ -5,6 +5,7 @@
 	import Socials from '../components/socials/socials.svelte';
 	import Title from '../components/title/title.svelte';
 	import Skills from '../components/skills/skills.svelte';
+	import Programming from '../components/programming/programming.svelte';
 </script>
 
 <svelte:head>
@@ -25,6 +26,9 @@
 	</div>
 	<div class="mt-10">
 		<Skills />
+	</div>
+	<div class="mt-10">
+		<Programming />
 	</div>
 	<Footer />
 </div>

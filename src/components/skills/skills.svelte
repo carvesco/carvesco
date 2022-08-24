@@ -7,7 +7,7 @@
 	let sklSize = '50%';
 	let skillVisible = false;
 	let y = 0;
-	$: if (xpos < 750) {
+	$: if (xpos < 950) {
 		skillVisible = false;
 	}
 	$: xpos = y;
@@ -15,7 +15,7 @@
 
 <svelte:window bind:scrollY={y} />
 <div
-	style="position: relative; right: {xpos > 750 ? 0 : (750 - xpos).toString() + 'px'};"
+	style="position: relative; right: {xpos > 950 ? 0 : (950 - xpos).toString() + 'px'};"
 	on:click={(e) => {
 		skillVisible = !skillVisible;
 	}}
